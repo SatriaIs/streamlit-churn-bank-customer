@@ -359,5 +359,5 @@ df.to_csv('customer-churn.csv', index=False)
 ```
 ## Deployment
 [Hasil Streamlitnya](https://app-churn-bank-customer-satriais.streamlit.app/)
-![Alt text]()
+![Alt text](buktiStreamlit.png)
 
