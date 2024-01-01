@@ -6,13 +6,14 @@
 ## Domain Proyek
 Churn for bank customer ini tentang kesetiaan seorang nasabah dari suatu bank berdasarkan nilai skor kredit, jangka waktu nasabah berlangganan di bank tersebut, nilai saldo dan sebagainya. berdasarkan atribut yang ada kita dapat melihat apakah nasabah itu tetap memilih bank tersebut atau justru meninggalkan bank tersebut
 ## Business Understanding
+Dengan adanya Churn for bank customer ini membuat kita mengetahui faktor apa saja yang mempengaruhi seorang nasabah memilih atau meninggalkan bank tersebut dan kita dapat mengetahui faktor kunci mengapa nasabah tersebut meninggalkan bank
 bagian laporan ini mencakup
 ### Problem Statements
 Ketidaktahuan kita mengenai kesetiaan, meninggalkan atau bertahannya seorang nasabah di suatu bank
 ### Goals
 agar kita dapat mengetahui apakah nasabah memilih bertahan dengan bank tersebut atau meninggalkan bank tersebut berdasarkan data yang ada dari kaggle
 ### Solution Statement
-- website ini berisi tentang apakah seseorang itu setia dengan bank yang dia pilih atau meninggalkan bank tersebut. datset ini terintegrasi dengan kaggle agar dapat dikatakan bahwa data tersebut valid
+- website ini berisi tentang apakah seseorang itu setia dengan bank yang dia pilih atau meninggalkan bank tersebut berdasarkan sejumlah faktor atau atribut yang tersedia. datset ini terintegrasi dengan kaggle agar dapat dikatakan bahwa data tersebut valid
 - Untuk Modeling Churn for bank customer ini menggunakan metode Decision Tree
 ## Data Understanding
 Dataset yang saya gunakan diambil dari Kaggle dengan tema churn for bank customer. dataset ini berisi tentang skor kredit, lamanya nasabah berlangganan dengan bank tersebut, uang saldo produk apa yang dibeli menggunakan bank tersebut dan sebagainya. untuk dataset sumbernya bisa cek link ini </br>
