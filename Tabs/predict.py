@@ -10,9 +10,9 @@ def app(df, x, y):
     with col1:
         CreditScore	= st.text_input("Input nilai CreditScore")
     with col1:
-        Geography = st.text_input("Geography (Keterangan: 0 = France, 1 = Germany, 2 = Spain)")
+        Geography = st.selectbox("Geography (Keterangan: 0 = France, 1 = Germany, 2 = Spain)", ["0", "1", "2"])
     with col1:
-        Gender = st.text_input("Input Gender (Keterangan: 0 = Female, 1 = Male)")
+        Gender = st.selectbox("Input Gender (Keterangan: 0 = Female, 1 = Male)", ["0", "1"])
     with col1:
         Age = st.text_input("Input Usia")
     with col1:
@@ -22,9 +22,9 @@ def app(df, x, y):
     with col2:
         NumOfProducts = st.select_slider("Num of products", ['1','2','3','4'])
     with col2:
-        HasCrCard = st.text_input("Apakah orang tersebut memiliki kartu kredit (Keterangan: 0 = No, 1 = Yes)")
+        HasCrCard = st.selectbox("Apakah orang tersebut memiliki kartu kredit (Keterangan: 0 = No, 1 = Yes)", ["0", "1"])
     with col2:
-        IsActiveMember = st.text_input("Apakah orang tersebut member aktif (Keterangan: 0 = No, 1 = Yes)")
+        IsActiveMember = st.selectbox("Apakah orang tersebut member aktif (Keterangan: 0 = No, 1 = Yes)", ["0", "1"])
     with col2:
         EstimatedSalary = st.text_input("Input nilai Estimated Salary")
 
