@@ -361,7 +361,3 @@ df.to_csv('customer-churn.csv', index=False)
 [Hasil Streamlitnya](https://app-churn-bank-customer-satriais.streamlit.app/)
 ![Alt text]()
 
-
-
-[Hasil Streamlitnya]()
-![Alt text]()
