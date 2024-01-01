@@ -358,5 +358,10 @@ dan akhirnya kita save dataset sebelumnya yang sudah kita ubah ini dengan cara
 df.to_csv('customer-churn.csv', index=False)
 ```
 ## Deployment
+[Hasil Streamlitnya](https://app-churn-bank-customer-satriais.streamlit.app/)
+![Alt text]()
+
+
+
 [Hasil Streamlitnya]()
 ![Alt text]()
