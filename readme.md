@@ -111,6 +111,8 @@ Next kita mengecek jumlah nasabah berdasarkan gender, dengan cara
 ```python
 df['Gender'].value_counts()
 ```
+hasilnya dapat diketahui bahwa nasabah dengan gender laki-laki sebanyak 5457 Nasabah sedangkan gender perempuan sebanyak 4543 Nasabah
+
 ## Exploratory Data Analysis
 untuk melihat apakah terdapat nilai yang kosong atau NaN pada dataset ini kita panggil dengan cara
 ``` python
