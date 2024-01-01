@@ -116,7 +116,7 @@ untuk melihat apakah terdapat nilai yang kosong atau NaN pada dataset ini kita p
 ``` python
 sns.heatmap(df.isnull())
 ```
-maka hasilnya
+
 ![Alt text](image-1.png)
 
 Dapat dilihat bahwa data tersebut tidak ada yang kosong dan data ini dapat dipakai untuk analisa lebih lanjut
@@ -126,8 +126,9 @@ Selanjutnya kita akan melihat sebaran data pada dataset ini, kita dapat memanggi
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(), annot=True)
 ```
-maka hasilnya
+
 ![Alt text](image-2.png)
+
 kita dapat melihat bahwa hanya hubungan Age dengan Exited yang berwarna cerah dibandingkan dengan yang lainnya maka dari ini kita dapat menyimpulkan bahwa usia memiliki pengaruh yang cukup besar terhadap keputusan nasabah untuk bertahan ataupun meninggalkan bank
 
 Selanjutnya kita akan melihat darimanakah nasabah ini berasal berdasarkan dataset ini, kita akan memakai visualisasi countplot agar mengetahui jumlah nasabah di negara yang tertera, kita dapat memanggilnya dengan cara
@@ -136,24 +137,27 @@ sns.countplot(x=df['Geography'])
 plt.title('Country')
 plt.show()
 ```
-maka hasilnya 
+
 ![Alt text](image-3.png)
+
 dari data ini kita dapat melihat bahwa negara prancis merupakan negara dengan nasabah terbanyak pada dataset dengan jumlah 5000 nasabah diikuti negara spanyol dan jerman dengan jumlah yang hampir sama
 
 next kita akan melihat jumlah nasabah berdasarkan usia, disini saya akan memakai distplot, pemanggilannya dengan cara
 ``` python
 sns.displot(df, x='Age')
 ```
-maka hasilnya
+
 ![Alt text](image-4.png)
+
 dapat dilihat bahwa sebagian besar nasabah berusia 30-40 tahun 
 
 selanjutnya kita akan melihat kemungkinan nasabah meninggalkan bank berdasarkan usia nasabah, disini saya akan memakai lineplot dengan cara
 ``` python
 sns.lineplot(x=df['Age'], y=df['Exited']) 
 ```
-maka hasilnya
+
 ![Alt text](image-5.png)
+
 kita dapat melihat dari grafik bahwa mulai diusia 25 tahun sampai 55 tahun chance untuk meninggalkan bank menaik. dan dari usia 25-55 tahun sebagian meinggalkan bank
 
 selanjutnya kita akan melihat presentase nasabah dari dataset ini berdasarkan gender, disini saya memakai pieChart, pemanggilannya dengan cara
@@ -162,8 +166,9 @@ plt.title('Percentage Male And Female in Dataset')
 plt.pie(df['Gender'].value_counts(), labels=['Male', 'Female'], autopct='%.2f%%')
 plt.show()
 ```
-maka hasilnya
+
 ![Alt text](image-6.png)
+
 dapat dilihat bahwa laki-laki memiliki presentase lebih tinggi daripada perempuan meski perbedaannya tidak begitu jauh
 
 selanjutnya kita akan melihat nilai tertinnggi dari skor kredit, usia, saldo dan estimated salary, pemanggilannya dengan cara
@@ -171,16 +176,18 @@ selanjutnya kita akan melihat nilai tertinnggi dari skor kredit, usia, saldo dan
 number_list = ['CreditScore', 'Age', 'Balance', 'EstimatedSalary']
 df[number_list].hist(figsize=(10,8))
 ```
-maka hasilnya
+
 ![Alt text](image-7.png)
+
 dilihat dari grafik ini untuk skor kredit yang dimiliki nasabah sebagian besar memiliki skor 650-700, selanjutnya kebanyakan nasabah berusia 35-40 tahun untuk saldo sebagian besar nasabah memiliki kisaran 0-25000 dan untuk estimated salary kebanyakan nasabah memiliki 50000 sampai 150000
 
 next untuk melihat orang yang exited atau melihat beralih atau tidaknya dari nasabah berdasarkan saldo, kita dapat melihatnya dengan cara
 ```python
 (sns.FacetGrid(df, hue='Exited', height = 4).map(sns.kdeplot,"Balance", fill=True).add_legend())
 ```
-maka hasilnya
+
 ![Alt text](image-8.png)
+
 kita dapat melihat bahwa yang memiliki saldo yang sedikit itu ternyata memilih bertahan memilih bank tersebut dan yang memiliki saldo yang tinggi belum tentu si nasabah itu bertahan di bank tersebut
 
 selanjutnya kita akan melihat berapa banyak nasabah yang meninggalkan bank atau yang bertahan berdasarkan negara si nasabah tersebut, kita dapat memanggilnya dengan cara
@@ -189,8 +196,9 @@ plt.figure(figsize=(10,6))
 sns.countplot(x=df['Exited'], hue='Geography', data=df)
 plt.show()
 ```
-maka hasilnya
+
 ![Alt text](image-9.png)
+
 kita dapat melihat bahwa kebanyakan nasabah yang bertahan dibank tersebut berasal dari negara prancis dan yang terendah berada di negara jerman
 dan nasabah yang meninggalkan bank yang terbanyak dari negara prancis dan jerman dengan jumlah yang serupa
 ## Preprosessing
@@ -314,15 +322,16 @@ confusmat = confusion_matrix(y_test, y_pred)
 dis = metrics.ConfusionMatrixDisplay(confusion_matrix=confusmat, display_labels=labels)
 dis.plot()
 ```
-maka hasilnya
+
 ![Alt text](image-10.png)
 
 selanjutnya kita akan melihat classification reportnya dengan cara
 ```python
 print(f"classification report : \n {classification_report(y_test, dtc.predict(x_test))}")
 ```
-maka hasilnya
+
 ![Alt text](image-12.png)
+
 selanjutnya kita coba menginput masing-masing variabel yang kita panggil sebelumnya dengan salah satu record dari dataset tersebut dengan cara
 ``` python
 input_data =(822, 0, 1, 50, 7, 0.0, 2, 1, 1, 10062.8)
@@ -350,8 +359,9 @@ _ = tree.plot_tree(model,
                    filled=True
 )
 ```
-maka hasilnya
+
 ![Alt text](image-11.png)
+
 disini kita dapat melihat bahwa usia nasabah yang paling berpengaruh terhadap kesetiaanya terhadap bank tersebut 
 
 dan akhirnya kita save dataset sebelumnya yang sudah kita ubah ini dengan cara
