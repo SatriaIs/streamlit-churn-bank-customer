@@ -36,7 +36,7 @@ Dataset yang saya gunakan diambil dari Kaggle dengan tema churn for bank custome
 ## Data Preparation
 
 ### Data Discovery and Profiling
-karena kita menggunakan text editor google colab maka untuk pengerjaaannya dimulai dari import file dan melakukan file upload dengan mengambil token API kita dari kaggle yang nanti akan terdownload dengan kaggle.json
+Hal pertama yang dilakukan yaitu membuka text editor, disini saya memakai Google Colab lalu membuat file baru dengan format ipynb. karena kita menggunakan text editor google colab maka untuk pengerjaaannya dimulai dari import file dan melakukan file upload dengan mengambil token API kita dari kaggle yang nanti akan terdownload dengan kaggle.json
 ``` python
 from google.colab import files
 files.upload()
@@ -58,14 +58,14 @@ selanjutnya kita ekstrak dataset yang sudah kita download dengan cara
 !unzip churn-for-bank-customers.zip -d churn-for-bank-customers
 !ls churn-for-bank-customers
 ```
-Untuk bagian ini saya menggunakan teknik EDA. Hal pertama yang dilakukan yaitu membuka text editor, disini saya memakai Google Colab lalu membuat file baru dengan format .ipynb lalu mengimport library yang dibutuhkan untuk pembahasan ini
+selanjutnya saya mengimport library yang dibutuhkan untuk pembahasan ini
 ``` python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-dan jangan lupa untuk pemanggilan library scikit learn dengan cara
+dan jangan lupa untuk pemanggilan library scikit learn, scikit learn ini berguna untuk memanggil atau mengakses berbagai algoritma yang akan kita pakai. karena disini menggunakan metode Decision Tree, kita panggil library scikit learn khusus Decision tree, untuk transformasi data dan melihat akurasi skor, confusion matrix dan laporan klasifikasi dengan cara
 ``` python
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
