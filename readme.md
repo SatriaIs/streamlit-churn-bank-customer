@@ -370,6 +370,8 @@ dan akhirnya kita save dataset sebelumnya yang sudah kita ubah ini dengan cara
 ```python
 df.to_csv('customer-churn.csv', index=False)
 ```
+## Evaluation 
+Disini saya menggunakan F1 score, F1 score ini merupakan perbandingan rata-rata dan recall yang dibobotkan, kita bisa lihat gambar classification report sebelumnya, terlihat bahwa akurasi menggunakan F1 Score pada dataset ini sebesar 0.85 atau 85%
 ## Deployment
 [Hasil Streamlitnya](https://app-churn-bank-customer-satriais.streamlit.app/)
 ![Alt text](buktiStreamlit.png)
