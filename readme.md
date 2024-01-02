@@ -31,7 +31,7 @@ Dataset yang saya gunakan diambil dari Kaggle dengan tema churn for bank custome
 - NumOfProducts : merujuk pada jumlah produk yang telah dibeli oleh nasabah melalui bank tersebut (Bertipe data Int)
 - HasCrCard : menunjukkan apakah nasabah memiliki kartu kredit atau tidak, kolom ini juga relevan karena nasabah yang memiliki kartu kredit cenderung tidak akan meninggalkan bank (Bertipe data Int)
 - IsActiveMember : nasabah yang aktif cenderung tidak akan meninggalkan bank(Bertipe data Int)
-- EstimatedSalary : seperti halnya saldo, orang dengan gaji yang lebih rendah cenderung meninggalkan bank dibandingkan dengan orang yang gajinya tinggi(Bertipe data Int)
+- EstimatedSalary : seperti halnya saldo, orang dengan gaji yang lebih rendah cenderung meninggalkan bank dibandingkan dengan orang yang gajinya tinggi(Bertipe data Float)
 - Exited : apakah nasabah meninggalkan bank atau tidak (Bertipe data Int)
 ## Data Preparation
 
