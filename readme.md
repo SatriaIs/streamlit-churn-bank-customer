@@ -351,7 +351,7 @@ else:
 ```
 hasilnya adalah nasabah tetap memilih atau bertahan pada bank tersebut
 ## Visualisasi Hasil Algoritma
-tahap pamungkas adalah menvisualisasi pohon keputusannya, kita dapat memanggilnya dengan cara
+puncak dari tahap ini adalah memvisualisasi pohon keputusannya, kita dapat memanggilnya dengan cara
 ```python
 fig = plt.figure(figsize=(30,10))
 _ = tree.plot_tree(model,
